@@ -45,8 +45,12 @@ class _DemoDesignPatternBlocPageState extends State<DemoDesignPatternBlocPage> {
                 ElevatedButton(onPressed: () {
                   bloc.increment(IncrementEvent(1));
                 }, child: Text("Increment")),
-                ElevatedButton(onPressed: () {}, child: Text("Decrement")),
-                ElevatedButton(onPressed: () {}, child: Text("Reset")),
+                ElevatedButton(onPressed: () {
+                  bloc.decrement(DecrementEvent(-1));
+                }, child: Text("Decrement")),
+                ElevatedButton(onPressed: () {
+                  bloc.reset(ResetEvent(0));
+                }, child: Text("Reset")),
               ],
             )
           ],
