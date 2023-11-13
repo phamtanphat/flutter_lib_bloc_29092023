@@ -30,8 +30,7 @@ class _DemoDesignPatternBlocPageState extends State<DemoDesignPatternBlocPage> {
               builder: (context, snapshot) {
                 if (snapshot.hasError) {
                   return Text(snapshot.error.toString());
-                } else if (snapshot.connectionState ==
-                    ConnectionState.waiting) {
+                } else if (snapshot.connectionState == ConnectionState.waiting) {
                   return CircularProgressIndicator();
                 } else if (snapshot.connectionState == ConnectionState.active) {
                   return Text("Count: ${snapshot.data}");
