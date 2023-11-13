@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_lib_bloc_29092023/design_pattern_bloc/demo_design_pattern_bloc_page.dart';
+import 'package:flutter_lib_bloc_29092023/lib_bloc/demo_lib_bloc_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: DemoDesignPatternBlocPage()
+      home: DemoLibBlocPage()
     );
   }
 }
